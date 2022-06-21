@@ -17,3 +17,21 @@ export const decreaseBalance = (amount) => {
     })
   }
 }
+
+export const increaseBet = (amount) => {
+  return (dispatch) => {
+    dispatch({
+      type: "increaseBet",
+      payload: amount      
+    })
+  }
+}
+
+export const decreaseBet = (amount) => {
+  return (dispatch) => {
+    dispatch({
+      type: "decreaseBet",
+      payload: amount      
+    })
+  }
+}

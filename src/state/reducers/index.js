@@ -2,9 +2,11 @@
 
 import {combineReducers} from "redux"
 import balanceReducer from "./balanceReducer"
+import betReducer from "./betReducer"
 
 const reducers = combineReducers({
-  balance : balanceReducer
+  balance : balanceReducer,
+  bet : betReducer
 })
 
 export default reducers;
